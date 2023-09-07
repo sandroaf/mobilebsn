@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#slogo {
+    width: 75%;
+}
+
+#scabecalho {
+    width: 25%;
+}
+
+header figure {
+    width: 315px;
+}
+
+form, nav {
+   float: right;    
+}
