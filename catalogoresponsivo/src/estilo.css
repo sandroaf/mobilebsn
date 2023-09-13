@@ -1,11 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 header {
     padding: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
+}
+
+#fbusca {
+    min-width: 200px;
+}
+
+#fbusca input {
+    height: 24px;
+    margin-top: 50px;
+    vertical-align: middle;
+}
+
+#ibusca {
+    width: 80%;
 }
 
 #slogo {
-    width: 75%;
+    width: 50%;
 }
 
 #scabecalho {
@@ -13,12 +32,12 @@ header {
     width: 20%;
 }
 
-header figure {
-    margin: 0;
-    padding: 0;
-    width: 315px;
+nav li {
+    display: inline;
+    width: 100%;
 }
 
-form, nav {
-   float: right;    
+header+figure {
+    width: 100%;
 }
+
