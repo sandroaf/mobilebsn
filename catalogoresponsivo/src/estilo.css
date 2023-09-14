@@ -7,6 +7,7 @@ header {
     padding: 0;
     display: flex;
     flex-flow: wrap;
+    justify-content: space-between;
 }
 
 #fbusca {
@@ -24,20 +25,44 @@ header {
 }
 
 #slogo {
-    width: 50%;
+    width: 250px;
+}
+
+#slogo figure img {
+    width: 100%;
 }
 
 #scabecalho {
+    display: flexbox;
     padding-right: 10px;
-    width: 20%;
+    border: 1px solid green;
+    width: 70%;
+    text-align: right;
+}
+
+nav#menu {
+    font-size: 1.5em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 50px; 
+    border: 1px solid blue;
+}
+
+nav#menu ul {
+    margin-right: 50px;
+    height: 50px;
+    border: 1px solid lightblue;
 }
 
 nav li {
-    display: inline;
-    width: 100%;
+    display: inline-flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 15px; 
+    background-color: gray;
+    color: bisque;
+    padding: 0 5px;
+    text-align: center;
+    vertical-align: middle;
 }
 
-header+figure {
-    width: 100%;
-}
 
