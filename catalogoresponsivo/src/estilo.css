@@ -4,7 +4,7 @@
 }
 
 header {
-    padding: 0;
+    margin: 0 5%;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
@@ -25,7 +25,10 @@ header {
 }
 
 #slogo {
-    width: 250px;
+    width: 235px;
+}
+
+#slogo figure {
 }
 
 #slogo figure img {
@@ -35,34 +38,89 @@ header {
 #scabecalho {
     display: flexbox;
     padding-right: 10px;
-    border: 1px solid green;
-    width: 70%;
     text-align: right;
 }
 
 nav#menu {
     font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, 'Times New Roman', Times, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-top: 50px; 
-    border: 1px solid blue;
 }
 
 nav#menu ul {
-    margin-right: 50px;
+    padding-right: 5px;
     height: 50px;
-    border: 1px solid lightblue;
+    padding-top: 10px;
 }
 
-nav li {
-    display: inline-flex;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 15px; 
-    background-color: gray;
-    color: bisque;
-    padding: 0 5px;
+nav#menu li {
+    display: inline-block;
+    margin-left: 1px; 
+    padding: 5px;
     text-align: center;
     vertical-align: middle;
 }
 
+nav#menu li:hover {
+    background-color: gray;
+    color: beige;
+    cursor: pointer;
+}
 
+.top-banner {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.top-banner figure {
+    display: flex;
+    padding: 0 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+.top-banner figure img {
+    width: 100%;
+}
+
+.produtos {
+    display: grid;
+    margin: 0 5%;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.produtos > .produto {
+    text-align: center;
+    padding: 5px;
+}
+
+footer {
+    display: grid;
+    padding: 10px;
+    margin: 50px 5% 0 5%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    background-color: gray;
+    color: beige;
+}
+
+#sfsobre {
+    text-align: center;
+}
+
+nav#nfredes ul {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav#nfredes li{
+    display: inline;
+}
