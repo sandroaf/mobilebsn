@@ -11,7 +11,9 @@ header {
 }
 
 #fbusca {
+    width: 100%;
     min-width: 200px;
+    margin: 0 auto;
 }
 
 #fbusca input {
@@ -25,10 +27,13 @@ header {
 }
 
 #slogo {
-    width: 235px;
+    display: flex;
+    margin: 0 auto;
 }
 
 #slogo figure {
+    width: 200px;
+    padding: 10px;
 }
 
 #slogo figure img {
@@ -40,6 +45,18 @@ header {
     padding-right: 10px;
     text-align: right;
 }
+
+.ham-menu {
+    display: none;
+    font-size: 4em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    text-align: right;
+}
+
 
 nav#menu {
     font-size: 1.5em;
@@ -123,4 +140,39 @@ nav#nfredes ul {
 
 nav#nfredes li{
     display: inline;
+}
+
+@media (max-width: 768px) {
+    .ham-menu {
+        display: block;
+    }
+    
+    nav#menu {
+        position: absolute;
+        top: 70px;
+        left: calc(100% - 35%);
+        /*display: inline-block;*/
+        display: none;
+        width: 35%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    nav#menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+    }
+
+    nav#menu li {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    nav#menu.active {
+        display: flex;
+    }
 }
