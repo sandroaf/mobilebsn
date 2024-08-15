@@ -46,6 +46,7 @@ header {
     text-align: right;
 }
 
+/* Botão menu hamburguer*/
 .ham-menu {
     display: none;
     font-size: 4em;
